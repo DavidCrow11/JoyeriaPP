@@ -1,0 +1,212 @@
+:root{
+    --darktu: #3f888f;
+    --turquesa: #5DC1B9;
+    --rojo: #F52340;
+    --azulcl: #C8E5E3;
+    --amarillo: #EDFC1D;
+    --gris: #393d42;
+
+}
+*, *:after ,*:before{
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.baseQuien{
+    height: 100vh;
+    background-image: url(../img/baseQS.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -4.5em;
+  
+    .contQuien{
+      padding: 40% 12%;
+        
+      h1{
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--obscuro);          
+      }
+    }
+}
+
+.infoQuien{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: -2em;
+
+    .izqQuien{
+        background: #fff;
+        width: 40%;
+        height: auto;
+        margin-right: -3em;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        z-index: 2;
+        display: flex;
+        img{
+            width: 80%;
+            height: auto;
+            margin-left: auto;
+            margin-right: 0;
+            box-shadow: 2px 2px 10px #666;
+        }
+    }
+
+    .derQuien{
+        background: var(--azulcl);
+        width: 70%;
+        height: auto;
+        z-index: 1;
+
+        .txtQD{
+            padding: 5em;
+
+            h1{
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 10%;
+            }
+            h2{
+                font-size: 12px;
+                margin-left: 10%;
+            }
+            p{
+                text-align: justify;
+                font-size: 15px;
+                margin-left: 5%;
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+.divisorQS{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    .sepIzq{
+        background: var(--azulcl);
+        width: 40%;
+        height: auto;
+        padding: 3em;
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    .sepDer{
+        width: 60%;
+        height: auto;
+        background-image: url(../img/qSimg2.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        box-shadow: 2px 2px 10px #666;        
+    }
+}
+
+.servicios{
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+
+    .servCont{
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+        .servIzq,
+        .servCent,
+        .servDer{
+            width: 30%;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto; 
+            p{
+                text-align: center;
+                b{
+                    font-size: 21px;
+                    color: var(--obscuro);
+                }
+            }           
+        }
+
+        .fa-eye,
+        .fa-concierge-bell,
+        .fa-search{
+            color: var(--azulcl);
+        }
+    }
+}
+
+.separadorQuien{
+    background-image: url(../img/baseQS.jpg);
+    height: 4em;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 3em;
+}
+
+.quienFin{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 4em;
+
+    .izqFin{
+        background: #fff;
+        width: 40%;
+        height: auto;
+        margin-right: -3em;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        z-index: 2;
+        display: flex;
+        img{
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: 0;
+            box-shadow: 2px 2px 10px #666;
+        }
+    }
+
+    .derFin{
+        background: var(--rojo);
+        width: 70%;
+        height: auto;
+        z-index: 1;
+
+        .txtFin{
+            padding: 4em;
+
+            h1{
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 10%;
+            }
+            h2{
+                font-size: 12px;
+                margin-left: 10%;
+            }
+            p{
+                text-align: justify;
+                font-size: 15px;
+                margin-left: 5%;
+                margin-top: 2em;
+            }
+        }
+    }
+}

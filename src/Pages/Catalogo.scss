@@ -1,0 +1,131 @@
+:root{
+    --darktu: #3f888f;
+    --turquesa: #5DC1B9;
+    --verde: #90FF98;
+    --azul: #263AE9;
+    --amarillo: #EDFC1D;
+    --obscuro: #3F0E22;
+
+}
+*, *:after ,*:before{
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.baseCatalogo{
+    height: 100vh;
+    background-image: url(../img/baseCatalogo.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -4.5em;
+  
+    .contCatalogo{
+      padding: 20% 12%;
+        
+      h1{
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;          
+      }
+    }
+}
+
+body{
+    background: rgb(248, 248, 248);
+}
+
+.artCuadro{
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+
+    .artCentro{
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .articulo{
+            background: #fff;
+            width: 30%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+            border-radius: 1em;
+            box-shadow: 1px 1px 5px #666;
+
+            .artImg{
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 1em;
+                }
+            }
+
+            .contArt{
+                width: 90%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1.5em;
+                margin-bottom: .5em;
+
+                h2{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 13px;
+                    color: slategray;
+                }
+
+                .botones{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    margin-bottom: 1.5em;
+                    .detCat{
+                        background: var(--darktu);
+                        color: #fff;
+                        width: 40%;
+                        height: 2em;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        line-height: 35px;
+                        border-radius: .5em;
+                        text-decoration: none;
+                    }
+                    .contCat{
+                        background: var(--azul);
+                        color: #fff;
+                        width: 40%;
+                        height: 2em;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        line-height: 35px;
+                        border-radius: .5em;
+                        text-decoration: none;
+                    }
+                    .detCat:hover,
+                    .contCat:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
